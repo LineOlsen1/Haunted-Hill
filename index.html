@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Haunted Hill – Halloweenfestival i København</title>
+  <meta name="description" content="Oplev Haunted Hill, en fiktiv Halloweenfestival i København med The Haunted House, Horror Labyrinth og Costume Night. Gratis adgang til festivalområdet.">
+  <meta name="theme-color" content="#180A2A">
+  <link rel="icon" href="assets/images/logo.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+  <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"WebSite","name":"Haunted Hill","inLanguage":"da","description":"Studieprojekt om en fiktiv Halloweenfestival i København."}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#indhold">Spring til indhold</a>
+  <header class="site-header">
+    <div class="header-inner container">
+      <a class="brand" href="index.html" aria-label="Haunted Hill – forside">
+        <img src="assets/images/logo.png" alt="" width="419" height="416">
+        <span>Haunted Hill</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="hovednavigation" aria-label="Åbn menu" hidden>
+        <span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span class="close-icon" aria-hidden="true">X</span>
+      </button>
+      <nav id="hovednavigation" class="primary-nav" aria-label="Hovednavigation">
+        <ul>
+          <li><a href="index.html" aria-current="page">Forside</a></li>
+          <li><a href="program.html">Program</a></li>
+          <li><a href="tilgaengelighed.html">Tilgængelighed</a></li>
+          <li><a href="billetter.html">Billetter</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="indhold" tabindex="-1">
+    <section class="hero" aria-labelledby="hero-title">
+      <img id="hero-bats-animation" class="hero-bats" src="assets/images/bats-static.png" data-static-src="assets/images/bats-static.png" data-animated-src="assets/images/bats-web.gif" alt="" width="1920" height="517">
+      <div class="hero-content container">
+        <h1 id="hero-title">Haunted Hill</h1>
+        <p>Tør du træde ind i mørket?</p>
+        <a class="button" href="#rabat">Få 10 % rabat på din aktivitetsbillet</a>
+      </div>
+      <button class="motion-toggle" type="button" aria-controls="hero-bats-animation" hidden>Sæt flagermus på pause</button>
+    </section>
+    <div class="home-content">
+      <section class="experiences container" aria-labelledby="experiences-title">
+        <h2 id="experiences-title">Oplevelser der får pulsen op</h2>
+        <div class="activity-grid">
+          <article class="activity">
+            <div class="activity-image house-image"><img src="assets/images/haunted-house.png" alt="Et uhyggeligt hus med tårne i mørket" width="597" height="346" loading="lazy"></div>
+            <h3>The Haunted House</h3>
+          </article>
+          <article class="activity">
+            <div class="activity-image"><img src="assets/images/labyrinth.png" alt="Gæster ved en blåbelyst buegang med et skelet" width="764" height="1161" loading="lazy"></div>
+            <h3>Horror Labyrinth</h3>
+          </article>
+          <article class="activity">
+            <div class="activity-image"><img src="assets/images/costume.png" alt="En gæst i et spøgelsesagtigt kostume i blåt lys" width="436" height="658" loading="lazy"></div>
+            <h3>Costume Night</h3>
+          </article>
+        </div>
+        <a class="button program-button" href="program.html">Se Programmet</a>
+      </section>
+      <section class="signup container" id="rabat" aria-labelledby="signup-title">
+        <h2 id="signup-title">Er du klar til Haunted Hill?</h2>
+        <div class="signup-card">
+          <h3>Få 10 % på din billet</h3>
+          <p>Skal du med til Haunted Hill?</p>
+          <p>Tilmeld dig her, og få 10 % rabat på din oplevelsesbillet.</p>
+          <form aria-label="Rabatregistrering" aria-describedby="privacy-note">
+            <fieldset disabled>
+              <legend class="sr-only">Rabatregistrering er ikke tilgængelig</legend>
+              <label class="sr-only" for="first-name">Dit fornavn</label>
+              <input id="first-name" type="text" placeholder="Dit fornavn" autocomplete="off">
+              <label class="sr-only" for="email">Din e-mailadresse</label>
+              <input id="email" type="email" placeholder="Din e-mailadresse" autocomplete="off">
+              <button class="button" type="button">Send mig rabatkoden</button>
+            </fieldset>
+          </form>
+          <p class="form-note reservation-note">Din tilmelding er <strong>ikke</strong> en billetreservation.<br class="mobile-note-break"> Billetten købes ved indgangen.</p>
+          <p class="form-note" id="privacy-note">Dine oplysninger bruges kun til<br class="mobile-note-break"> rabatkoden, ikke til markedsføring.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <a class="footer-brand" href="index.html">Haunted Hill</a>
+        <ul class="social-icons" aria-label="Sociale medier – illustrationer uden aktive profiler">
+          <li><img src="assets/images/facebook.svg" alt="Facebook" width="24" height="24"></li>
+          <li><img src="assets/images/linkedin.svg" alt="LinkedIn" width="24" height="24"></li>
+          <li><img src="assets/images/youtube.svg" alt="YouTube" width="24" height="24"></li>
+          <li><img src="assets/images/instagram.svg" alt="Instagram" width="24" height="24"></li>
+        </ul>
+        <address>Refshaleøen<br>1432 København K<br><br><span>hauntedhill@hauntedhill.dk</span></address>
+      </div>
+      <nav class="footer-nav" aria-label="Navigation i sidefod">
+        <h2>Mere om <span>Haunted Hill</span></h2>
+        <ul>
+          <li><a href="index.html" aria-current="page">Forside</a></li>
+          <li><a href="program.html">Program</a></li>
+          <li><a href="billetter.html">Billetter</a></li>
+          <li><a href="tilgaengelighed.html">Tilgængelighed</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

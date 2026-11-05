@@ -1,0 +1,158 @@
+/* Page-specific styles leave the approved homepage's layout unchanged. */
+.program-page, .access-page, .ticket-page { background: var(--night); }
+.page-title { font: 400 8rem/10.9375rem var(--font-display); }
+.page-bat { position: absolute; pointer-events: none; transform-origin: top center; animation: bat-sway 2.4s ease-in-out 2; }
+.program-content { position: relative; padding-top: 1.6875rem; padding-bottom: 4.4375rem; }
+.program-intro { margin-top: 1.6875rem; font-size: 2.25rem; line-height: 2.75rem; font-weight: 700; }
+.program-intro p + p { margin-top: 2.75rem; }
+.program-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; margin-top: 1.5rem; }
+.program-card { min-width: 0; min-height: 57.75rem; padding: .9375rem .9375rem 2.1875rem; display: flex; flex-direction: column; background: var(--ink); border-radius: 1.6875rem; scroll-margin-top: 2rem; }
+.program-image { position: relative; height: 23.5625rem; overflow: hidden; border-radius: 1.1875rem; }
+.program-image img { height: 100%; width: 100%; object-fit: cover; }
+.program-image picture { display: block; height: 100%; }
+.ghost-image img { position: absolute; height: 146.13%; width: 100%; max-width: none; bottom: 0; object-fit: cover; }
+.intensity { margin-top: .75rem; color: #f0e4a3; font-weight: 600; }
+.program-card h2 { margin-top: 1.125rem; font: 400 2rem/1.2 var(--font-accent); }
+.program-description { font-size: 1.25rem; line-height: 1.75rem; margin-top: 1.75rem; margin-bottom: 2rem; }
+.program-description .teaser { margin-bottom: 1.75rem; }
+.program-card .button { min-width: min(10.6875rem, 100%); align-self: center; margin-top: auto; }
+.program-card .button:disabled { opacity: 1; }
+.program-access { position: relative; margin: 6.375rem auto 0; max-width: 52.5rem; min-height: 15.5625rem; padding: 2.625rem 1.5rem 1.8125rem; background: var(--ink); border-radius: 1.6875rem; text-align: center; }
+.program-access h2 { color: var(--cta); font-size: 2.25rem; line-height: 2.75rem; }
+.program-access p { margin-top: 1.5rem; }
+.program-access .button { margin-top: 2rem; min-width: min(14.25rem, 100%); }
+.program-ticket { margin-top: 5.25rem; text-align: center; }
+.program-ticket h2 { font: 400 2.5rem/1.5 var(--font-accent); }
+.program-ticket .button { min-width: min(10.6875rem, 100%); margin-top: 1.9375rem; }
+.program-bat-top { top: -.6875rem; right: -1rem; width: 6.875rem; }
+.program-bat-left { top: 81.5625rem; left: -.6875rem; width: 5.8125rem; }
+.program-bat-bottom { bottom: 9rem; right: 12.5rem; width: 4.75rem; }
+
+.access-content { padding-top: 2.125rem; }
+.access-information { width: min(62rem, calc(100% - 2rem)); margin: 4.1875rem auto 0; display: grid; gap: 3.75rem; min-height: 86rem; align-content: start; }
+.access-information h2, .access-contact h2 { font-size: 2.25rem; line-height: 2.75rem; }
+.access-information p, .access-contact p { font-size: 1.5rem; line-height: 1.375; }
+.access-intro { min-height: 8.125rem; }
+.access-intro h2 { color: #f0e4a3; }
+.access-intro p { font-weight: 600; margin-top: 1.25rem; }
+.access-section h2 { margin-bottom: 1.25rem; }
+.access-section:nth-child(2) { min-height: 11.125rem; }
+.access-section:nth-child(3) { min-height: 10.875rem; }
+.access-section:nth-child(4), .access-section:nth-child(5) { min-height: 7.6875rem; }
+.access-section:nth-child(6) { min-height: 13.875rem; }
+.access-contact { position: relative; isolation: isolate; margin-top: 2.6875rem; min-height: 33.75rem; padding-bottom: 16rem; }
+.access-contact::before { content: ''; position: absolute; z-index: -1; inset: -6rem 0 5rem; background: linear-gradient(var(--night), var(--shadow) 25%, var(--shadow) 60%, var(--night)); }
+.access-contact-inner { width: min(52.5rem, calc(100% - 2rem)); margin-inline: auto; text-align: center; }
+.access-contact p { margin-top: 3.125rem; }
+.access-contact .button { min-width: min(10.6875rem, 100%); margin-top: 3.125rem; }
+.contact-bat { width: 5.625rem; top: 15.875rem; left: calc(50% - .75rem); }
+
+.ticket-content { position: relative; isolation: isolate; padding-top: 1.4375rem; padding-bottom: 1.75rem; }
+.ticket-content::before { content: ''; position: absolute; z-index: -2; top: 0; left: 0; right: 0; height: 103rem; background: url('../assets/images/ticket-forest.png') left top / 145.125rem auto no-repeat; }
+.ticket-content::after { content: ''; position: absolute; z-index: -1; inset: 80rem 0 20rem; background: linear-gradient(transparent, var(--shadow) 20%, var(--shadow) 70%, transparent); }
+.ticket-intro { background: var(--night); border-radius: 1.6875rem; margin-top: 1rem; padding: 1.1875rem 4.6875rem 1.5rem; min-height: 11.5625rem; }
+.ticket-intro h2 { font-size: 2.25rem; line-height: 2.75rem; margin-bottom: 1rem; }
+.ticket-intro p + p { margin-top: 1.5rem; }
+.ticket-panel { background: var(--night); border-radius: 1.6875rem; margin-top: 1.9375rem; padding: 2.0625rem 4.875rem 2.75rem; }
+.ticket-panel h2 { font: 400 3rem/3.625rem var(--font-display); }
+.ticket-price { color: var(--cta); font-weight: 700; font-size: 2.25rem; line-height: 2.75rem; margin: 1.375rem 0 1rem; }
+.ticket-free { min-height: 23.0625rem; }
+.ticket-free > p:not(.ticket-price) { max-width: 26.875rem; }
+.ticket-free > p:not(.ticket-price):not(.free-admission) { font-weight: 600; }
+.free-admission { background: var(--ink); border: 1px solid var(--cta); border-radius: .5rem; min-height: 3.375rem; padding: .9375rem .5rem; text-align: center; margin-top: 1.5rem; }
+.ticket-paid { min-height: 31.4375rem; display: grid; grid-template-columns: minmax(0, 26.875rem) minmax(0, 26.875rem); justify-content: space-between; gap: 4rem; }
+.individual-ticket .ticket-price { margin-top: 1.25rem; margin-bottom: .25rem; }
+.included-activities { margin-bottom: 1.5rem; }
+.individual-ticket .button { min-width: 15.9375rem; margin-top: .5rem; }
+.entrance-note { margin-top: .9375rem; }
+.group-ticket h2 { line-height: 3.625rem; }
+.group-ticket h3 { color: var(--cta); font-size: 2.25rem; line-height: 2.75rem; margin-top: 1rem; }
+.group-ticket p + p { margin-top: 1.5rem; }
+.group-price { color: var(--cta); }
+.ticket-signup { width: calc(100% - 1rem); margin: 6.875rem auto 0; scroll-margin-top: 2rem; }
+.ticket-signup .signup-card { min-height: 33.875rem; }
+.ticket-practical { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 3.5rem; margin: 3.0625rem .375rem 0; }
+.ticket-practical h2 { font-size: 2.25rem; line-height: 2.75rem; margin-bottom: 1.0625rem; }
+.faq-item { background: var(--night); border-radius: 1.6875rem; padding: .8125rem 2rem 1rem 4.875rem; min-height: 6.9375rem; }
+.faq-item + .faq-item { margin-top: 1.0625rem; }
+.faq-item h3 { font-size: 1.5rem; line-height: 1.5; font-weight: 600; margin-bottom: .75rem; }
+.faq-item p { font-size: 1.25rem; line-height: 1.5; }
+.ticket-location { position: relative; }
+.location-address { background: var(--ink); border-radius: 1.6875rem; padding: 1.25rem; min-height: 9.3125rem; display: grid; align-content: center; gap: 1.875rem; text-align: center; }
+.location-bat { width: 7.625rem; top: 12.6875rem; right: 0; }
+#kontakt { scroll-margin: 3rem; }
+
+@media (max-width: 63.99rem) {
+  .page-title { font-size: 4rem; line-height: 5.1875rem; }
+  .program-content { padding-top: 0; padding-bottom: 4.0625rem; }
+  .program-intro { font-size: 1.25rem; line-height: 2.75rem; margin-top: 2.75rem; }
+  .program-intro p + p { margin-top: 2.75rem; }
+  .program-grid { grid-template-columns: minmax(0, 1fr); gap: 2.1875rem; margin-top: 2.375rem; }
+  .program-card { min-height: 50.0625rem; padding: .9375rem .875rem 2rem; }
+  .program-card:nth-child(2) { min-height: 56.0625rem; }
+  .program-card:nth-child(3) { min-height: 60.3125rem; }
+  .program-image { height: auto; aspect-ratio: 330 / 366; }
+  .program-card h2 { margin-top: 1.0625rem; }
+  .program-description { margin-top: 2rem; }
+  .program-card .button { min-width: min(10.0625rem, 100%); }
+  .program-access { min-height: 17.3125rem; margin-top: 4.6875rem; padding: 2.625rem 1rem 1.9375rem; }
+  .program-access h2 { font-size: 1.875rem; margin-inline: -1rem; }
+  .program-access p { margin-top: 1.4375rem; }
+  .program-access .button { min-width: min(12.6875rem, 100%); margin-top: 2rem; }
+  .program-ticket { margin-top: 6.25rem; }
+  .program-ticket h2 { font-size: 1.5rem; }
+  .program-ticket .button { margin-top: 1.5rem; }
+  .program-content > .page-bat { display: none; }
+  .access-content { padding-top: 2.0625rem; }
+  .access-content .page-title { font-size: clamp(2.375rem, 12.3vw, 3rem); line-height: 4.8125rem; text-align: center; }
+  .access-information { margin-top: .4375rem; min-height: 0; gap: 3.9375rem; }
+  .access-information h2, .access-contact h2 { font-size: 1.5rem; line-height: 1.5834; }
+  .access-information p, .access-contact p { font-size: 1rem; line-height: 1.25; }
+  .access-intro { min-height: 9.1875rem; }
+  .access-intro h2 { font-size: 2rem; line-height: 1.35; }
+  .access-intro p { line-height: 1.4; margin-top: 1.5rem; }
+  .access-section h2 { margin-bottom: .375rem; }
+  .access-section:nth-child(2) { min-height: 12.625rem; }
+  .access-section:nth-child(3) { min-height: 12.6875rem; }
+  .access-section:nth-child(4), .access-section:nth-child(5) { min-height: 7.1875rem; }
+  .access-section:nth-child(6) { min-height: 13.6875rem; }
+  .access-contact { margin-top: 7.75rem; min-height: 16.5rem; padding-bottom: 4.5625rem; }
+  .access-contact::before { display: none; }
+  .access-contact p { margin-top: .375rem; min-height: 6.5625rem; }
+  .access-contact .button { margin-top: 0; }
+  .contact-bat { display: none; }
+  .ticket-content { padding-top: .75rem; padding-bottom: 3.1875rem; }
+  .ticket-content::before { background-image: linear-gradient(rgb(24 10 42 / 55%) 0 7rem, transparent 9rem), url('../assets/images/ticket-forest.png'); background-position: center top; background-size: 100% 9rem, auto 111.5625rem; height: 111.5625rem; }
+  .ticket-content::after { inset: 103rem 0 20rem; }
+  .ticket-intro { margin-top: 1.125rem; min-height: 13.9375rem; padding: .75rem .625rem 2.125rem; }
+  .ticket-intro h2 { font-size: 1.25rem; line-height: 1.35; margin-bottom: 1rem; }
+  .ticket-intro p { font-size: .875rem; line-height: 1.5rem; }
+  .ticket-intro p + p { margin-top: 1.5rem; }
+  .ticket-panel { margin-top: 1.375rem; padding: 1rem 2.125rem 1.5rem; border-radius: 1.6875rem; }
+  .ticket-panel h2 { font-size: 2.25rem; }
+  .ticket-free { min-height: 17.25rem; }
+  .ticket-free p:not(.ticket-price) { font-size: .875rem; }
+  .ticket-free .ticket-price { margin: .875rem 0 .75rem; }
+  .free-admission { margin-top: .75rem; margin-inline: -.5625rem; }
+  .ticket-paid { display: block; min-height: 63.8125rem; padding: 1.5625rem 1.0625rem .625rem; }
+  .individual-ticket h2, .individual-ticket .ticket-price { margin-left: 1rem; }
+  .individual-ticket .ticket-price { margin-top: .875rem; font-size: 2.25rem; line-height: 2.75rem; }
+  .individual-ticket p, .included-activities { font-size: .875rem; }
+  .individual-ticket .button { display: flex; width: min(15.9375rem, 100%); min-width: 0; margin: 2.9375rem auto 0; }
+  .individual-ticket .entrance-note { display: none; }
+  .group-ticket { margin-top: 4.6875rem; }
+  .group-ticket h2 { font-size: 2.25rem; line-height: 1.4; }
+  .group-ticket h3 { font-size: 2.25rem; line-height: 1.3; margin-top: 2.625rem; margin-bottom: 1rem; }
+  .group-ticket p { font-size: .875rem; line-height: 1.5rem; }
+  .ticket-signup { width: 100%; margin-top: 5rem; }
+  .ticket-signup .signup-card { min-height: 42.125rem; }
+  .ticket-practical { display: block; margin: 4.125rem 0 0; }
+  .ticket-practical h2 { font-size: 1.5rem; line-height: 2.375rem; margin-bottom: 1.0625rem; }
+  .faq-item { background: var(--ink); padding: .8125rem .625rem .9375rem; }
+  .faq-item h3 { font-size: 1rem; line-height: 1.5; margin-bottom: .5rem; }
+  .faq-item p { font-size: .875rem; }
+  .ticket-location { margin-top: 5.75rem; }
+  .ticket-location h2 { font-size: 1.875rem; line-height: 2.9375rem; }
+  .location-address { font-size: 1rem; }
+  .location-bat { display: none; }
+}
